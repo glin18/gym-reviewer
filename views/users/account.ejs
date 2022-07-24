@@ -1,0 +1,12 @@
+<%= layout("layouts/boilerplate") %>
+<h1>Account Info</h1>
+<div class="card" style="width: 18rem">
+  <img src="images/defaultPicture.jpeg" class="card-img-top" alt="no image" />
+  <div class="card-body">
+    <h5 class="card-title"><%= user.username %></h5>
+    <p class="card-text">Descripton:</p>
+    <form action="http://localhost:3000/users/signout" method="post">
+      <button type="submit" class="btn btn-primary">Sign out</button>
+    </form>
+  </div>
+</div>

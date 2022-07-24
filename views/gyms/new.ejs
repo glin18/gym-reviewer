@@ -1,0 +1,50 @@
+<%- layout("layouts/boilerplate") %>
+<h1 class="text-center">Add a new Gym</h1>
+<form
+  action="http://localhost:3000/gyms/new"
+  method="post"
+  class="needs-validation mb-5"
+  novalidate
+>
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" name="title" required />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label for="location" class="form-label">Location</label>
+    <input type="text" class="form-control" name="location" required />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label for="services" class="form-label">Services</label>
+    <input type="text" class="form-control" name="services" required />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label for="equipment" class="form-label">Equipment</label>
+    <input type="text" class="form-control" name="equipment" required />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Image URL</label>
+    <input type="text" class="form-control" name="image" required />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label for="contact" class="form-label">Contact</label>
+    <input type="text" class="form-control" name="contact" required />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea
+      class="form-control"
+      name="description"
+      rows="3"
+      required
+    ></textarea>
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>
